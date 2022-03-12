@@ -28,7 +28,7 @@ let codiceCP = document.getElementById("codice")
 
 let carrozza = document.getElementById("numCarrozza");
 
-addEventListener("click",
+addEventListener("dblclick",
     function() {
         //recuperare dati input
        console.log(nomeCognome.value, km.value, fasciaEta.value)
