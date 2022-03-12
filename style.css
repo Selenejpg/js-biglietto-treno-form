@@ -1,0 +1,53 @@
+body {
+    background-color: #b91450;
+}
+
+.text-color {
+    color: #b91450;
+}
+
+.border-color {
+    border-color: #b91450;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.btn {
+    height: 30px;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+}
+
+.border {
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.little {
+    font-size: 12px;
+}
+
+.borders {
+    border-top: 1px solid black;  
+    border-bottom: 1px solid black;
+}
+
+.height {
+    height: 150px;
+}
+
+.bg-gray {
+    background-color: grey;
+}
