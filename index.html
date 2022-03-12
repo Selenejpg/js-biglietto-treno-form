@@ -18,28 +18,28 @@
                 <div class="col-3 col-md-3 col-lg-3">
                     <h2 class="mt-2 text-color text-center">Nome e cognome</h2>
                     <form class="text-center" action="/action_page.php">
-                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="text" id="name" name="fname"><br><br>
                     </form>
                 </div>
                 <div class="col-3 col-md-3 col-lg-3 ms-5">
                     <h2 class="mt-2 text-color text-center">KM da percorrere</h2>
                     <form class="text-center" action="/action_page.php">
-                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="text" id="kilometri" name="fname"><br><br>
                     </form>
                 </div>
                 <div class="col-3 col-md-3 col-lg-3 ms-5">
                     <h2 class="mt-2 text-color text-center">Fascia d'età</h2>
                     <div class="dropdown d-flex justify-content-center ">
-                        <select name="" id="" placeholder="fascia" class="form-select in-height border-color">
-                            <option value="">Minorenne</option>
-                            <option value="">Tra i 18 e i 65 anni</option>
-                            <option value="">Over 65</option>
+                        <select name="" id="eta" placeholder="fascia" class="form-select in-height border-color">
+                            <option id="option-1" value="meno-di-18">Minorenne</option>
+                            <option id="option-2" value="tra-18-65">Tra i 18 e i 65 anni</option>
+                            <option id="option-3" value="piu-di-65">Over 65</option>
                         </select>
                     </div>
                 </div>
                 <div class="container col-12 col-md-12 col-lg-12 d-flex flex-wrap justify-content-center">
                     <div class="row col-1 col-md-1 col-lg-1">
-                        <button type="button" class="btn btn-secondary">Genera</button>
+                        <button id="btngenera" type="button" class="btn btn-secondary">Genera</button>
                     </div>
                     <div class="row col-1 col-md-1 col-lg-1 ms-5">
                         <button type="button" class="btn btn-secondary">Annulla</button>
@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    <div class="contenitore col-12 col-md-12 col-lg-12 d-flex flex-wrap justify-content-center">
+    <div id="tabella" class="contenitore col-12 col-md-12 col-lg-12 d-flex flex-wrap justify-content-center d-none">
         <h1 class="col-12 col-md-12 col-lg-12 text-uppercase pb-3 text-center">il tuo biglietto</h1>
         
         <div class="row col-8 col-md-8 col-lg-8 bg-light p-4 border">
@@ -57,23 +57,23 @@
             <div class="d-flex flex-wrap align-items-center justify-content-center borders height">
                 <div class="col-4 col-md-4 col-lg-4">
                     <h3 class="text-uppercase pb-2"><strong>nome passeggero</strong></h3>
-                    <span class="little text-left d-flex justify-content-start"></span>
+                    <span id="nometabPasseggero" class="little text-left d-flex justify-content-start"></span>
                 </div>
                 <div class="pe-3 col-2 col-md-2 col-lg-2 pt-3 pb-3">
                     <h3 class="text-uppercase pb-2 little"><strong>offerta</strong></h3>
-                    <span class="little text-left d-flex justify-content-start"></span>
+                    <span id="scontoTabella" class="little text-left d-flex justify-content-start"></span>
                 </div>
                 <div class="pe-3 col-2 col-md-2 col-lg-2 pt-3 pb-3">
                     <h3 class="text-uppercase little pb-2"><strong>carrozza</strong></h3>
-                    <span class="little text-left d-flex justify-content-start"></span>
+                    <span id="numCarrozza" class="little text-left d-flex justify-content-start"></span>
                 </div>
                 <div class="pe-3 col-2 col-md-2 col-lg-2 pt-3 pb-3">
                     <h3 class="text-uppercase little pb-2"><strong>codice cp</strong></h3>
-                    <span class="little text-left d-flex justify-content-start"></span>
+                    <span id="codice" class="little text-left d-flex justify-content-start"></span>
                 </div>
                 <div class="pe-3 col-2 col-md-2 col-lg-2 pt-3 pb-3">
                     <h3 class="text-uppercase little pb-2"><strong>prezzo biglietto</strong></h3>
-                    <span class="little text-left d-flex justify-content-start"></span>
+                    <span id="prezzoTabella" class="little text-left d-flex justify-content-start"></span>
                 </div>
             </div>
         </div>
