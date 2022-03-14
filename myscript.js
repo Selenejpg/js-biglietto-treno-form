@@ -52,7 +52,6 @@ addEventListener("dblclick",
 
         codiceCP.innerHTML = numeroRandom;
         carrozza.innerHTML = carrozzaRandom;
-        
 
 
        //mostrare/nascondere tabella
